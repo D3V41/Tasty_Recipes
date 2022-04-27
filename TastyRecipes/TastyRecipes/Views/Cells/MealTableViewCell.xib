@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="77" id="KGk-i7-Jjw" customClass="MealTableViewCell" customModule="TastyRecipes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exampleImage" translatesAutoresizingMaskIntoConstraints="NO" id="XhO-0e-Jbe">
+                        <rect key="frame" x="8" y="14.5" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="XhO-0e-Jbe" secondAttribute="height" multiplier="1:1" id="QE7-ir-OXb"/>
+                            <constraint firstAttribute="width" constant="48" id="WzT-Wa-rMV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dish Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQb-de-l0Z">
+                        <rect key="frame" x="64" y="14.5" width="248" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9P-el-fNA">
+                        <rect key="frame" x="64" y="37.5" width="248" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="TQb-de-l0Z" firstAttribute="top" secondItem="XhO-0e-Jbe" secondAttribute="top" id="6Kg-KX-yhl"/>
+                    <constraint firstItem="TQb-de-l0Z" firstAttribute="leading" secondItem="XhO-0e-Jbe" secondAttribute="trailing" constant="8" id="8Yk-06-r7g"/>
+                    <constraint firstAttribute="trailing" secondItem="o9P-el-fNA" secondAttribute="trailing" constant="8" id="FN3-Gx-9I6"/>
+                    <constraint firstItem="o9P-el-fNA" firstAttribute="leading" secondItem="XhO-0e-Jbe" secondAttribute="trailing" constant="8" id="Lde-uW-g54"/>
+                    <constraint firstItem="o9P-el-fNA" firstAttribute="top" secondItem="TQb-de-l0Z" secondAttribute="bottom" constant="2" id="S7M-PF-7n7"/>
+                    <constraint firstItem="XhO-0e-Jbe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="iB0-1c-Rkf"/>
+                    <constraint firstAttribute="trailing" secondItem="TQb-de-l0Z" secondAttribute="trailing" constant="8" id="kxy-fT-EpM"/>
+                    <constraint firstItem="XhO-0e-Jbe" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xLU-yq-FKM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageDish" destination="XhO-0e-Jbe" id="f7J-5c-neb"/>
+                <outlet property="labelDishCategory" destination="o9P-el-fNA" id="LRS-nU-y3V"/>
+                <outlet property="labelDishName" destination="TQb-de-l0Z" id="qjh-wu-9ZD"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="95.424107142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="exampleImage" width="930" height="1054"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

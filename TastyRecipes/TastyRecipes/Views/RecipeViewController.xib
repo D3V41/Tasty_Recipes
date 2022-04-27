@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecipeViewController" customModule="TastyRecipes" customModuleProvider="target">
+            <connections>
+                <outlet property="AddToFavButton" destination="82q-iW-TGT" id="7uf-UK-x6v"/>
+                <outlet property="recipeDetailLabel" destination="R9j-8J-3Sn" id="g7g-71-FIL"/>
+                <outlet property="recipeThumbImageView" destination="GAQ-Lv-SCI" id="ppg-Tp-gqE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G9q-r5-go7">
+                    <rect key="frame" x="0.0" y="44" width="414" height="813"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t3N-ZU-i7D">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="806"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GAQ-Lv-SCI">
+                                    <rect key="frame" x="21" y="10" width="372.5" height="250"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="250" id="Fij-gT-08d"/>
+                                        <constraint firstAttribute="width" constant="372.5" id="dhR-8V-5ZG"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82q-iW-TGT">
+                                    <rect key="frame" x="132" y="270" width="150" height="30"/>
+                                    <color key="backgroundColor" name="AccentColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="9TH-sV-Rr6"/>
+                                        <constraint firstAttribute="width" constant="150" id="p53-AD-WJT"/>
+                                    </constraints>
+                                    <state key="normal" title="Add to Favourites">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="touchUpInsideAddToFavButton:" destination="-1" eventType="touchUpInside" id="bZ4-gh-yOZ"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" placeholderIntrinsicWidth="311" placeholderIntrinsicHeight="481" text="Ingredients" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9j-8J-3Sn">
+                                    <rect key="frame" x="21" y="315" width="372" height="481"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="R9j-8J-3Sn" firstAttribute="leading" secondItem="t3N-ZU-i7D" secondAttribute="leading" constant="21" id="28c-PI-Tot"/>
+                                <constraint firstItem="R9j-8J-3Sn" firstAttribute="top" secondItem="82q-iW-TGT" secondAttribute="bottom" constant="15" id="RJA-xF-yFw"/>
+                                <constraint firstItem="GAQ-Lv-SCI" firstAttribute="centerX" secondItem="t3N-ZU-i7D" secondAttribute="centerX" id="Zo1-v5-Lq6"/>
+                                <constraint firstItem="82q-iW-TGT" firstAttribute="top" secondItem="GAQ-Lv-SCI" secondAttribute="bottom" constant="10" id="aaf-Qv-xuX"/>
+                                <constraint firstAttribute="bottom" secondItem="R9j-8J-3Sn" secondAttribute="bottom" constant="10" id="hFF-dC-k22"/>
+                                <constraint firstItem="GAQ-Lv-SCI" firstAttribute="top" secondItem="t3N-ZU-i7D" secondAttribute="top" constant="10" id="iEX-nl-Qmm"/>
+                                <constraint firstAttribute="trailing" secondItem="R9j-8J-3Sn" secondAttribute="trailing" constant="21" id="iEf-1t-fR4"/>
+                                <constraint firstItem="82q-iW-TGT" firstAttribute="centerX" secondItem="GAQ-Lv-SCI" secondAttribute="centerX" id="zzy-4l-f6S"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="t3N-ZU-i7D" firstAttribute="width" secondItem="mSW-Tw-h19" secondAttribute="width" id="0ah-Fk-9IO"/>
+                        <constraint firstItem="t3N-ZU-i7D" firstAttribute="top" secondItem="Myq-zR-kbo" secondAttribute="top" id="OvQ-Xa-By4"/>
+                        <constraint firstItem="t3N-ZU-i7D" firstAttribute="leading" secondItem="Myq-zR-kbo" secondAttribute="leading" id="TD9-0W-vXn"/>
+                        <constraint firstItem="t3N-ZU-i7D" firstAttribute="bottom" secondItem="Myq-zR-kbo" secondAttribute="bottom" id="dhB-od-dlU"/>
+                        <constraint firstItem="t3N-ZU-i7D" firstAttribute="trailing" secondItem="Myq-zR-kbo" secondAttribute="trailing" id="yta-vP-ZRP"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="Myq-zR-kbo"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="mSW-Tw-h19"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="G9q-r5-go7" secondAttribute="trailing" id="2aA-eD-YCD"/>
+                <constraint firstItem="G9q-r5-go7" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="TYl-Ts-QO4"/>
+                <constraint firstItem="G9q-r5-go7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Zba-Jt-MGo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="G9q-r5-go7" secondAttribute="bottom" constant="5" id="ptJ-rM-YPN"/>
+            </constraints>
+            <point key="canvasLocation" x="-314.49275362318843" y="109.82142857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

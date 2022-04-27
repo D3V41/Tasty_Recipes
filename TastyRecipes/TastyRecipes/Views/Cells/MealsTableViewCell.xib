@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="46" id="KGk-i7-Jjw" customClass="MealsTableViewCell" customModule="TastyRecipes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aFv-oL-m9r">
+                        <rect key="frame" x="0.0" y="-5" width="64" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="aFv-oL-m9r" secondAttribute="height" multiplier="1:1" id="u56-K9-mup"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7y8-xh-wFi">
+                        <rect key="frame" x="88" y="12.5" width="240" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7y8-xh-wFi" firstAttribute="leading" secondItem="aFv-oL-m9r" secondAttribute="trailing" constant="24" id="Yh0-6O-tHc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <constraints>
+                <constraint firstItem="7y8-xh-wFi" firstAttribute="centerY" secondItem="njF-e1-oar" secondAttribute="centerY" id="7RQ-kn-ngG"/>
+                <constraint firstItem="njF-e1-oar" firstAttribute="leading" secondItem="aFv-oL-m9r" secondAttribute="leading" id="GWj-6R-YUq"/>
+                <constraint firstItem="aFv-oL-m9r" firstAttribute="width" secondItem="njF-e1-oar" secondAttribute="width" multiplier="0.2" id="Uyz-1k-Ke0"/>
+                <constraint firstItem="7y8-xh-wFi" firstAttribute="width" secondItem="njF-e1-oar" secondAttribute="width" multiplier="0.75" id="cWf-A1-Qyi"/>
+                <constraint firstItem="aFv-oL-m9r" firstAttribute="centerY" secondItem="njF-e1-oar" secondAttribute="centerY" id="wp2-TF-gpg"/>
+            </constraints>
+            <connections>
+                <outlet property="mealsImageView" destination="aFv-oL-m9r" id="vzK-jB-Dcq"/>
+                <outlet property="mealsTitleLabel" destination="7y8-xh-wFi" id="fXl-iR-6hL"/>
+            </connections>
+            <point key="canvasLocation" x="-149.27536231884059" y="41.517857142857139"/>
+        </tableViewCell>
+    </objects>
+</document>
